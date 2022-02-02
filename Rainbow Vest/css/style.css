@@ -1,0 +1,106 @@
+.header-logo{
+    border: solid black 2px;
+}
+
+header>h1{
+    background-color:#198e99;
+}
+
+header~nav>a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;    
+    text-decoration: none;
+    background-color: #198e99;
+    color: white;    
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header~nav>a:hover{
+    color: white;
+    background-color:#0e545a;
+}
+
+h5{
+    display: inline;
+}
+
+header>h2{
+    font-size: 20px;
+}
+
+main~footer{
+    background-color:#198e99;
+}
+
+nav~p{    
+    color: rgb(255, 255, 255);
+    background-color:#000000;    
+}
+nav>p{ 
+    color:rgb(0, 0, 0);
+}
+
+.nav-footer>p~a{
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: #000;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-footer>p~a:hover{
+    color: white;
+    text-decoration: underline;
+}
+footer>img{
+    margin-left: -12px;
+}
+
+header~img{
+    width:70%;
+}
+
+section{
+    background-color: rgb(241, 255, 255);    
+}
+
+footer>.container-fluid{
+    color: white;
+    background-color: rgb(38, 91, 126);
+}
+
+footer>.mb-1{
+    color: white;
+    background-color: rgb(43, 153, 226);
+}
+
+button:hover{
+    color:rgb(0, 0, 0);    
+}
+
+aside{
+    background-color: thistle;
+    border: solid thistle 3px;
+}
+
+body>header>h1{
+    color: white;
+}
+
+ol>li, ul>li{
+    list-style-type: none;
+}
+
+.aside-masc{
+    background-color:#c8c9cd;
+    border: solid 2px #c8c9cd;
+}
+
+.aside-main{
+    background-image: linear-gradient(#c8c9cd, thistle);
+}
+
+h1{
+    color: #c8c9cd;
+}
