@@ -1,0 +1,302 @@
+body{
+    font-family:sans-serif;
+    color: white;
+    text-align: center;        
+    margin:0px;        
+}
+
+body>div>header{
+    background-image: url(../imagens/artificial-inteligence.jpg);
+    background-position: center center;
+    height: 450px;
+    margin-top:-16px;
+    padding-top:10px;
+}
+
+div>h1{
+    margin-top:125px;
+    padding: 10px 0px 10px 0px;
+    background-color: black;
+    text-shadow: 1px 1px 12px rgb(12, 166, 238);
+}
+
+div>h1~p{
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.container{
+    margin-left: 10px;    
+    margin-right: 10px;    
+    width: 30%;
+    display: inline-block;    
+    border: 1px solid black;
+    background-color: rgba(0, 160, 189, 0.432);
+    margin-bottom:20px;
+}
+
+.container>img{
+    width: 90%;
+    margin-top: 10px;
+}
+
+section{
+    margin-top:20px;
+    padding-top:20px;
+    background-color: rgb(9, 51, 68);    
+}
+
+footer{
+    background-color: black;
+    margin-bottom:-16px;
+    height: 35px;
+    line-height:35px;
+}
+
+body>div{
+    margin:0px;    
+    background-color:black;
+}
+
+header>nav>ul{
+    text-align: right;    
+}
+
+header>nav{
+    margin-right: 10px;    
+}
+
+header>nav>ul>li:hover{
+    background-color: rgb(128, 128, 128);    
+}
+
+header>nav>ul>li:active{
+    background-color: rgb(63, 63, 63);    
+}
+
+header>nav>ul>li{
+    display: inline-block;        
+    background-color: rgba(128, 128, 128, 0.6);    
+    border: 1px solid rgb(3, 196, 255);    
+    transition: background-color 0.3s linear; 
+}
+
+li a{    
+    display: block;
+    text-decoration:none;
+    color: white;
+    padding: 10px;        
+}
+
+div>img~p{
+    color: rgb(255, 255, 255);
+    background-color:rgb(139, 48, 48);    
+}
+
+article>header~p{
+    color: black;
+    text-align: justify;
+    margin: 0% 12.5% 0% 12.5%;
+    text-indent: 40px;
+    line-height: 25px;
+    font-size: 18px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+article>header>h2{    
+    color: rgb(0, 0, 0);
+}
+
+br~section{
+    padding-bottom: 10px;    
+    background-color:rgba(160, 241, 255, 0.596);
+}
+
+br~.second-section{
+    background-image: url(../imagens/background.png);
+    background-position: contain;
+    padding-bottom: 10px;    
+}
+
+article>header>h2{
+    background-color: rgb(153, 196, 236);
+    margin: 0% 12.5% 0% 12.5%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+article>header{
+    margin: 0% 12.5% 0% 12.5%;
+    margin-bottom: -20px;    
+    border-right: 1px solid black;    
+    border-left: 1px solid black;    
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    padding-top:15px;
+}
+
+main>section{
+    margin-bottom: -18px;
+}
+
+main>section>h2{
+    background-color:rgba(0, 0, 0, 0.650);
+    margin : 0% 20% 1% 20%;
+    padding: 3px 0px 3px 0px;
+}
+
+.book{
+    display: inline-block;
+    width: 15%;
+}
+
+.book>img{
+    width: 80%;
+    margin-left: 1px solid black;
+}
+
+.second-section>article>header{
+    border: none;        
+}
+
+.second-section{
+    background-color:rgb(9, 51, 68);
+    padding-bottom: 25px;
+}
+
+.second-section>article>header>h2{    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    background-color:white;
+    color: black;
+}
+
+.last-p{
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+div>img~a{
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding:3% 21% 3% 21%;    
+    color: rgb(255, 255, 255);
+    transition: color 0.3s linear; 
+}
+
+div>img~a:hover{        
+    color: yellow;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 935px) { 
+    div>img~a{        
+        padding:2% 14% 2% 14%;    
+    }
+
+    article>header~p{
+        color: black;
+        text-align: justify;
+        margin: 0% 5% 0% 5%;
+        text-indent: 40px;
+        line-height: 25px;
+        font-size: 18px;
+        padding-right: 10px;
+        border-right: 1px solid black;
+        padding-left: 10px;
+        border-left: 1px solid black;
+    }
+
+    article>header{
+        margin: 0% 5% 0% 5%;
+        margin-bottom: -20px;    
+        border-right: 1px solid black;    
+        border-left: 1px solid black;    
+        padding-bottom: 20px;
+        border-top: 1px solid black;
+        padding-top:15px;
+    }
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px) { 
+    .container{
+        margin-left: 5px;    
+        margin-right: 5px;    
+        width: 70%;
+        display: inline-block;    
+        border: 1px solid black;
+        background-color: rgba(0, 160, 189, 0.432);
+        margin-bottom:15px;
+    }
+    
+    .container>img{
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }    
+    
+    section{
+        margin-top:20px;
+        padding-top:20px;
+        background-color: rgb(9, 51, 68);    
+    }
+
+    main>section>h2{        
+        background-color:rgba(0, 0, 0, 0.650);
+        margin : 0% 5% 1% 5%;
+        padding: 3px 2% 3px 2%;        
+    }
+
+    article>header>h2 {
+        background-color: rgb(153, 196, 236);
+        margin: 0% 2.5% 0% 2.5%;
+        margin-bottom: 15px;
+        border-bottom: 1px solid black;
+    }
+        
+    article>header~p{
+        color: black;
+        text-align: justify;
+        margin: 0% 2.5% 0% 2.5%;
+        text-indent: 40px;
+        line-height: 25px;
+        font-size: 18px;
+        padding-right: 10px;
+        border-right: 1px solid black;
+        padding-left: 10px;
+        border-left: 1px solid black;
+    }
+
+    article>header{
+        margin: 0% 2.5% 0% 2.5%;
+        margin-bottom: -20px;    
+        border-right: 1px solid black;    
+        border-left: 1px solid black;    
+        padding-bottom: 20px;
+        border-top: 1px solid black;
+        padding-top:15px;
+    }
+
+    .book{
+        display: inline-block;
+        width: 30%;
+        margin-top:10px;
+    }
+    
+    .book>img{
+        width: 70%;
+        margin-left: 1px solid black;
+    }
+
+    div>img~a {
+        text-decoration: none;
+        background-color: rgb(0, 0, 0);
+        padding: 3% 21% 3% 21%;        
+        color: rgb(255, 255, 255);        
+        transition: color 0.3s linear;
+    }
+}

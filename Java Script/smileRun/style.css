@@ -1,0 +1,11 @@
+#smile{
+    width: 150px;    
+    height: 150px;    
+    background-image: url(imagens/normal.png);
+    background-size: cover;
+    position: absolute;
+    left: 0px;    
+    top: 0px;    
+    margin: 0px;
+    padding: 0px;
+}

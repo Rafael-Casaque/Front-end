@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#forca{
+    background-image: url(imagens/6.png);
+    width: 400px;
+    height: 400px;
+}
+
+#palavra{
+    text-align: center;
+    margin-top:-50px;    
+}
+
+.palavra-escolhida{
+    width: 50px;
+    text-align: center;
+    background: black;    
+    color: black;
+    font-size: 25px;
+}
+
+#insert{
+    text-align: center;
+    margin-top:75px;
+}
+
+#insert>input{
+    font-size: 20px;
+}
+#insert>input~button{
+    font-size: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;    
+    font-size: 20px;
+}
+
+#corpo{
+    text-align: center;
+}
+
+#corpo>h1{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1000px){
+#palavra{
+    margin-top:20px;    
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.palavra-escolhida{
+    width:25px;
+}
+
+#letra{
+    margin-bottom: 20px;
+}
+
+#forca{
+    margin-left: 8%;
+}
+
+}
+
