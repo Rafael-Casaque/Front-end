@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="red">Vermelho</button>
+    <button id="green">Verde</button>
+    <button id="blue">Azul</button>
+</body>
+<script>
+    var red = document.getElementById("red");
+    var green = document.getElementById("green");
+    var blue = document.getElementById("blue");
+
+    function mudarCor(cor) {
+        parent.document.body.style.backgroundColor = cor; //muda a cor do html pai desse Iframe 
+    }
+
+    red.addEventListener("click", function () {
+        mudarCor("red");
+    });
+    green.addEventListener("click", function () {
+        mudarCor("green");
+    });
+    blue.addEventListener("click", function () {
+        mudarCor("blue");
+    });
+
+    console.log(location.hash) //retona o parametro passado na url
+</script>
+
+<script src="objeto history.js"></script>
+
+</html>

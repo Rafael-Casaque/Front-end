@@ -1,4 +1,4 @@
-var palavras = ["chocolate", "gelatina", "perfume", "garrafa", "escrivaninha", "pescaria", "smartphone", "embalagem", "panqueca", "carteira", "documento", "janela", "teclado", "violino", "cobertor", "mesanino", "programa"];
+var palavras = ["chocolate", "gelatina", "perfume", "garrafa", "escrivaninha", "pescaria", "smartphone", "embalagem", "panqueca", "carteira", "documento", "janela", "teclado", "violino", "cobertor", "mesanino", "programa","felicidade","tristeza","conhecimento","tempestade","estabilidade","igualdade","amizade","parafuso","introvertido","extrovertido","fragmento","recipiente","televisor","quadrado","desodorante","quadrilha"];
 var palavraEscolhida;
 var forca = document.getElementById("forca");
 var palavraEscolhida2 = document.getElementsByTagName("input");

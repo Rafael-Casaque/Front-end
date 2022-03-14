@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <h1 id="title">Bem vindo</h1>
+    <h2>Preferências:</h2>
+    <hr>
+    <form>
+        <label for="corFonte">Escolha a cor da fonte:</label>
+        <select name="corFonte" id="corF">
+            <option value="red">Vermelho</option>
+            <option value="yellow">Amarelo</option>
+            <option value="blue">Azul</option>
+            <option value="gray">Cinza</option>
+            <option value="black">Preto</option>
+        </select>
+        <hr>
+        <label for="corPagina">Escolha a cor da página:</label><br>
+        <input type="radio" class="corPag" value="green" name="corPagina">Verde<br>
+        <input type="radio" class="corPag" value="red" name="corPagina">Vermelho<br>
+        <input type="radio" class="corPag" value="blue" name="corPagina">Azul<br>
+        <input type="radio" class="corPag" value="gray" name="corPagina">Cinza<br>
+        <hr>
+        <label for="tamanhoFonte">Escolha o tamanho da fonte:</label>
+        <input name="tamanhoFonte" id="tamanhoF" type="range" min="10" max="30"><span id="valorRange">20px</span>
+        <hr>
+        <label for="nomeUser">Insira seu nome:</label>
+        <input name="nomeUser" id="nomeU" type="text">
+    </form>
+    <button type="submit" id="btn">Aplicar</button>
+</body>
+<script src="app.js"></script>
+</html>
