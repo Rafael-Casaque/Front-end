@@ -36,7 +36,12 @@ function fecharJanela(){
 }
 
 function rolarJanela(){
-    window.scrollBy(0,500); //faz  moviment de scroll o primeiro argumento é scroll horizontal e o segundo é scroll vertical
+    //faz  moviment de scroll o primeiro argumento é scroll horizontal e o segundo é scroll vertical
+    window.scrollBy({
+        top: 500,
+        left: 0,
+        behavior: 'smooth' //indica que a rolagem deve ser feita suavemente
+      });
 }
 
 git.addEventListener("click",abrirGit);
