@@ -92,3 +92,74 @@ console.log(array);
 array.splice(2, 0, 'TRÊS') //empurra o segundo elemento e insere o argumento inserido 
 
 console.log(array);
+
+var novoArray1 = [1, 2, 3, 4, 5];
+
+var novoArray2 = novoArray1.slice(); //copia o conteúdo integral de array1 para array2
+
+var novoArray3 = novoArray1.slice(-2); //copia o conteúdo de array1 a partir do antepenúltimo elemento
+
+var novoArray4 = novoArray1.slice(2) //copia o conteúdo de array1 a partir do índice 2
+
+novoArray1.pop();
+
+console.log(novoArray1);
+
+console.log(novoArray2);
+
+console.log(novoArray3);
+
+console.log(novoArray4);
+
+novoArray2 = novoArray2.reverse(); //inverte a ordem dos elementos do array
+
+console.log(novoArray2);
+
+novoArray2.sort();
+
+console.log(novoArray2);
+
+novoArray2.push(3)
+
+console.log(novoArray2.indexOf(3)); //procura da esquerda pra direita e retorna a posição do primeiro que achar
+
+console.log(novoArray2.lastIndexOf(3)); //procura da direita pra esquerda e retorna a posição do primeiro que achar
+
+//Método Map
+
+novoArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//o método map percorre o vetor da esquerda para e direita realizando a função para cada elemento
+
+novoArray2 = novoArray1.map(function(valor) {
+    return valor + 5; //valor se comporta como o elemento do vetor
+})
+
+function somar(valor) {
+    return valor + 10;
+}
+
+console.log(novoArray1.map(somar));
+
+
+//Método Filter
+
+novoArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function par(inp) {
+    let filter;
+    inp % 2 == 0 ? filter = true : filter = false;
+    return filter;
+}
+
+console.log(novoArray1.filter(par));
+
+//Método Reduce
+
+//percorre o vetor somando todos os elementos
+
+var resultado = novoArray1.reduce(function(acc, val) {
+    return acc + val;
+})
+
+console.log(resultado);
