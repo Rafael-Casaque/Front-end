@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="input">Insira os comandos: </label>
+    <input name="input" type="text" id="inp">
+    <button id="btn">Enviar</button>
+    <hr>
+    <ul>
+        <li><b>ADD X</b>: Adiciona o valor X na memória, se X ainda não existir.</li>
+        <li><b>REM X</b>: Remove o valor X da memória, se X ainda existir.</li>
+        <li><b>EXIST X</b>: Retorna o valor booleano TRUE ou FALSE se X existe ou não na memória.</li>
+        <li><b>JOIN</b>: Imprime no console a lista com os itens unidos por espaço.</li>
+        <li><b>ODD</b>: Imprime no console a lista de valores de strings que possuem um número ímpar de caracteres.</li>
+        <li><b>EVEN</b>: Imprime no console a lista de valores de strings que possuem um número par de caracteres.</li>
+        <li><b>PRINT</b>: Imprime a lista atual no console.</li>
+        <li><b>EXIT</b>: Para de requisitar novos comandos e imprime a lista atual no console.</li>
+    </ul>
+    <hr>
+    <p id="paragrafo">Digite algum comando...</p>
+    <hr>
+    <textarea readonly style="width:100%;height:200px;resize:none" id="console">Console:</textarea>
+</body>
+<script src="app.js"></script>
+
+</html>
