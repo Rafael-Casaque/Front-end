@@ -1,0 +1,9 @@
+{
+    "dadosEscolares": [
+        {"aluno":"Rafael","nota":8},
+        {"aluno":"Guilherme","nota":7},
+        {"aluno":"Cristina","nota":9},
+        {"aluno":"Lara","nota":10},
+        {"aluno":"José","nota":8}
+    ]
+}
