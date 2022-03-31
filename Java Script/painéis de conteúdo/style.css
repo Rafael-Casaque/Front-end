@@ -1,0 +1,94 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    background-color: rgb(7, 39, 107);
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(5, 131, 204);
+    margin: 0 15% 0 15%;
+}
+
+span{
+    font-weight: bold;        
+}
+
+div{
+    margin: 0 15% 0 15%;
+    padding: 25px;
+    background-color: rgb(206, 205, 205);    
+}
+
+p{
+    text-align: justify;    
+}
+
+.sel{
+    background-color: rgb(184, 184, 184);
+}
+
+.uns{
+    background-color: rgb(240, 240, 240);
+}
+
+.div-b{
+    position: relative;
+}
+
+.jan{
+    background-color: rgba(128, 128, 128, 0.76);
+    position: absolute;    
+    width: 60%;    
+    margin-top: -230px;
+}
+
+.jan>button{
+    float: right;    
+}
+
+.jan>button~p{
+    text-align: center;
+}
+
+.fechado{
+    display: none;
+}
+
+img{
+    width: 60%;
+}
+
+#paragrafo{
+    float: right;
+    margin-top: -350px;
+    margin-left: 62%;
+}
+
+.min{
+    width: 50px;        
+}
+
+section{    
+    text-align: center;    
+}
+
+section>img{
+    margin: 0 5% 0 5%;
+}
+
+#bfe{            
+    width: 49.5%;    
+}
+
+#bfd{        
+    width: 49.5%;    
+}
+
+.desfocado{ 
+    filter:brightness(0.5);    
+}
