@@ -2,6 +2,8 @@ var visivel=false;
 var tema='dia';
 var contador=1;
 
+checarTema();
+
 document.querySelector("header>nav").addEventListener("click",(event)=>{
     if(visivel==false){
         document.querySelector("header>nav>ul").setAttribute("class","visivel");
@@ -106,6 +108,7 @@ function temaClaro(){
     document.querySelector("body").setAttribute("id","body-claro");
     document.querySelector("#p-a>div>a").setAttribute("id","a-claro");    
     document.querySelector("#s-a>h2").setAttribute("id","album-claro");    
+    localStorage.tema = "claro";
 }
 
 function temaEscuro(){
@@ -116,4 +119,17 @@ function temaEscuro(){
     document.querySelector("body").setAttribute("id","body-escuro");
     document.querySelector("#p-a>div>a").setAttribute("id","a-escuro");    
     document.querySelector("#s-a>h2").setAttribute("id","album-escuro");    
+    localStorage.tema = "escuro";
+}
+
+function checarTema(){
+    if(localStorage.tema == "escuro"){
+        temaEscuro();
+        document.querySelector("aside>img").setAttribute("src","images/dayMode.png");
+    }
+    else{
+        temaClaro();
+        document.querySelector("aside>img").setAttribute("src","images/nightMode.png");
+    }
+    
 }
