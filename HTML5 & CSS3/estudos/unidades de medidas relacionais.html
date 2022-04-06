@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html{
+            font-size: 30px;
+        }
+
+        body{
+            font-size: 20px;
+        }
+        div>p:first-child{
+            font-size: 1.5em; /*tamanho equivalente a 150% do seu elemento pai, ou seja 30 px*/
+        }
+
+        div>p:nth-child(2){
+            font-size: 1.2rem; /*tamanho equivalente a 120% do elemento raiz da página, ou seja 36 px*/
+        }
+
+        div>p:last-child{
+            font-size: .5em; /*tamanho equivalente a 50% do seu elemento pai, ou seja 10 px*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Título da página</h1>
+    <div>
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p>Parágrafo 3</p>
+    </div>
+</body>
+</html>

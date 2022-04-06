@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="html, media queries"> <!--funciona como tags para auxiliar a busca do browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--tag importante para converter o tamanho das telas de aparelhos mobile-->
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+        .container{
+            background-color: gray;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .container>div{
+            background-color: white;
+            margin: 10px 0px 10px 0px;
+            border: 1px solid black;
+            width: calc(50% - 30px); /*propriedade que faz uma conta*/
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 500px) { /*regra css para aplicar esse estilo caso a tela for menor que 500px*/
+            body {
+                background-color: red;
+            }
+
+            .container>div{
+            background-color: white;
+            margin: 10px 0px 10px 0px;
+            border: 1px solid black;
+            width: 100%;                    /*Ao atingir o tamanho mínimo faz com que as divs sejam apresentadas uma abaixo da outra*/
+            display: block;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de uso de media queries</h1>
+    <p>Parágrafo qualquer</p>    
+    <div class="container">
+        <div>div1</div>
+        <div>div2</div>
+    </div>
+</body>
+
+</html>
