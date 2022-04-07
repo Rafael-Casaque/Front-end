@@ -48,50 +48,12 @@ document.querySelector("aside>img").addEventListener("click",(event)=>{
     }
 })
 
-document.querySelector(`#album>img[src="images/f1.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f1.jpg"`));
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f2.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f2.jpg"`));
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f3.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f3.jpg"`));
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f4.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f4.jpg"`));
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f5.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f5.jpg"`));
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f6.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f6.jpg"`));    
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f7.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f7.jpg"`));    
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f8.webp"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f8.webp"`));
-    event.stopPropagation();
-})
-
-document.querySelector(`#album>img[src="images/f9.jpg"`).addEventListener("click",(event)=>{        
-    aumentar(document.querySelector(`#album>img[src="images/f9.jpg"`));
-    event.stopPropagation();
-})
+for(botao of document.querySelectorAll(`#album>img`)){    
+    botao.addEventListener("click",(event)=>{                
+        aumentar(event.target);
+        event.stopPropagation();        
+    })
+}
 
 function aumentar(foto){
     for(i of document.querySelectorAll("#album>img")){
@@ -108,6 +70,10 @@ function temaClaro(){
     document.querySelector("body").setAttribute("id","body-claro");
     document.querySelector("#p-a>div>a").setAttribute("id","a-claro");    
     document.querySelector("#s-a>h2").setAttribute("id","album-claro");    
+    document.querySelector("footer>p").setAttribute("id","footer-claro");    
+    for(i of document.querySelectorAll("header>nav>ul>a")){
+        i.setAttribute("class","botoes-claro");    
+    }                
     localStorage.tema = "claro";
 }
 
@@ -119,6 +85,10 @@ function temaEscuro(){
     document.querySelector("body").setAttribute("id","body-escuro");
     document.querySelector("#p-a>div>a").setAttribute("id","a-escuro");    
     document.querySelector("#s-a>h2").setAttribute("id","album-escuro");    
+    document.querySelector("footer>p").setAttribute("id","footer-escuro");   
+    for(i of document.querySelectorAll("header>nav>ul>a")){
+        i.setAttribute("class","botoes-escuro");    
+    }                
     localStorage.tema = "escuro";
 }
 

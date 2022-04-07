@@ -26,7 +26,7 @@ header>nav{
 }
 
 header>nav>a>img{    
-    width: 7%;        
+    width: 5%;        
 }
 
 .visivel{
@@ -40,9 +40,13 @@ header>nav>ul{
 
 header>nav>ul>a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: sans-serif;        
+}
+
+header>nav>ul>a>li{
+    border-bottom: 1px solid black;
 }
 
 #slide>img{
@@ -50,6 +54,16 @@ header>nav>ul>a{
 }
 
 #sep{
+    margin-top: -4px;
+    background-image: url(images/sep.jpg);
+    background-size: cover;
+    height: 25px;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.76); 
+    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.76);
+}
+
+#sep0{
+    display: none;
     margin-top: -4px;
     background-image: url(images/sep.jpg);
     background-size: cover;
@@ -162,7 +176,7 @@ aside{
 aside>img{
     float: left;
     margin-left: 5%;          
-    width: 100%;
+    width: 100%;    
 }
 
 #album{    
@@ -180,4 +194,413 @@ aside>img{
 
 .invisivel{
     display: none;
+}
+
+#footer-claro{
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    text-align: center;    
+    padding: 5px 0 5px 0;
+}
+
+#footer-escuro{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    text-align: center;    
+    padding: 5px 0 5px 0;
+}
+
+@media screen and (min-width: 550px) and (max-width:650px){
+
+    header>nav>a{
+        display: none;
+    }
+
+    header>nav>ul{
+        display: inline;
+        background-color: transparent;                    
+    }
+
+    header>nav>ul>a{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;                        
+        width: 24%;        
+    }
+
+    header>nav>ul>a:hover{
+        color: rgb(235, 186, 26);
+    }
+
+    header>nav>ul>a>li{       
+        list-style: none;                        
+    }
+    #p-a>p{
+        text-indent: 40px;
+        font-size: 16.5px;
+    }
+    #s-a>h2{
+        font-size: 25px;
+    }
+
+    body>header>img{
+        width: 75%;
+    }    
+    
+    aside>img{
+        float: left;
+        margin-left: 25%;          
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width:850px){
+    header>nav>a{
+        display: none;
+    }
+
+    header>nav>ul{
+        display: inline;
+        background-color: transparent;                    
+    }
+
+    header>nav>ul>a{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;                        
+        width: 24%;        
+    }
+
+    header>nav>ul>a:hover{
+        color: rgb(235, 186, 26);
+    }
+
+    header>nav>ul>a>li{       
+        list-style: none;           
+        border: none;             
+    }
+    #p-a>p{
+        text-indent: 40px;
+        font-size: 18px;
+    }
+
+    #p-a>h2{
+        font-size: 30px;
+    }
+
+    #s-a>h2{
+        font-size: 25px;
+    }    
+
+    body>header>img{
+        width: 75%;
+    }
+    aside>img{
+        float: left;
+        margin-left: 35%;          
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width:1050px){
+    header>nav{
+        background-image: none;
+        width: 60%; 
+        float: right;        
+        margin-top: 2%;                   
+    }
+    
+    header>nav>a{
+        display: none;        
+    }
+
+    header>nav>ul{
+        display: inline;
+        background-color: transparent;         
+        text-align: center;
+    }
+
+    .botoes-claro{
+        color: black;
+    }
+
+    .botoes-escuro{
+        color: white;
+    }
+    
+    header>nav>ul>a{        
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 23px;
+        font-family: sans-serif;                        
+        width: 24%;        
+    }
+
+    header>nav>ul>a:hover{
+        color: rgb(235, 186, 26);
+    }
+
+    header>nav>ul>a>li{       
+        list-style: none;        
+        border: none;                
+    }
+    #p-a>p{
+        text-indent: 40px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #p-a>h2{
+        font-size: 30px;
+    }
+
+    #s-a>h2{
+        font-size: 25px;
+    }    
+
+    body>header{
+        text-align: left;
+    }
+
+    body>header>img{
+        width: 40%;
+    }
+    #sep0{
+        display: block;
+    }
+    #slide{
+        text-align: center;
+        background-image: url(images/background2.jpg);
+        background-position: cover;
+    }
+    #slide>img{
+        width: 85%;
+    }
+    #p-a>div{
+        margin: 20px 30% 20px 30%;
+    }
+    #s-a{
+        margin: 0 10% 0 10%;
+    }
+    .tamanho{
+        width: 32%;
+    }
+    
+    .grande{
+        width: 100%;
+    }
+    aside>img{
+        float: left;
+        margin-left: 35%;          
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width:1366px){
+    header>nav{
+        background-image: none;
+        width: 70%; 
+        float: right;        
+        margin-top: 1.85%;                   
+    }
+    
+    header>nav>a{
+        display: none;        
+    }
+
+    header>nav>ul{
+        display: inline;
+        background-color: transparent;         
+        text-align: center;
+    }
+
+    .botoes-claro{
+        color: black;
+    }
+
+    .botoes-escuro{
+        color: white;
+    }
+    
+    header>nav>ul>a{        
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 23px;
+        font-family: sans-serif;                        
+        width: 24%;        
+    }
+
+    header>nav>ul>a:hover{
+        color: rgb(235, 186, 26);
+    }
+
+    header>nav>ul>a>li{       
+        list-style: none;        
+        border: none;                
+    }
+    #p-a>p{
+        margin-top: 20px;
+        text-indent: 40px;
+        font-size: 20px;
+    }
+
+    #p-a{
+        margin: 30px 10% 0 10%;
+    }
+
+    #p-a>h2{
+        font-size: 30px;        
+    }
+
+    #p-a>div{
+        margin: 20px 30% 20px 30%;
+    }
+
+    #s-a{
+        margin: 0 15% 0 15%;
+    }
+
+    #s-a>h2{
+        font-size: 25px;
+    }    
+
+    body>header{
+        text-align: left;
+    }
+
+    body>header>img{
+        width: 30%;
+    }
+    #sep0{
+        display: block;
+    }
+    #slide{
+        text-align: center;
+        background-image: url(images/background2.jpg);
+        background-position: cover;
+    }
+    #slide>img{
+        width: 60%;
+    }
+    .tamanho{
+        width: 32%;
+    }
+    
+    .grande{
+        width: 100%;
+    }
+    aside>img{
+        float: left;
+        margin-left: 35%;          
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1366px){
+    header>nav{
+        background-image: none;
+        width: 70%; 
+        float: right;        
+        margin-top: 1.85%;                   
+    }
+    
+    header>nav>a{
+        display: none;        
+    }
+
+    header>nav>ul{
+        display: inline;
+        background-color: transparent;         
+        text-align: center;
+    }
+
+    .botoes-claro{
+        color: black;
+    }
+
+    .botoes-escuro{
+        color: white;
+    }
+    
+    header>nav>ul>a{        
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 23px;
+        font-family: sans-serif;                        
+        width: 24%;        
+    }
+
+    header>nav>ul>a:hover{
+        color: rgb(235, 186, 26);
+    }
+
+    header>nav>ul>a>li{       
+        list-style: none;        
+        border: none;                
+    }
+    #p-a>p{
+        margin-top: 20px;
+        text-indent: 40px;
+        font-size: 20px;
+    }
+
+    #p-a{
+        margin: 30px 10% 0 10%;
+    }
+
+    #p-a>h2{
+        font-size: 30px;        
+    }
+
+    #p-a>div{
+        margin: 20px 30% 20px 30%;
+    }
+
+    #s-a{
+        margin: 0 15% 0 15%;
+    }
+
+    #s-a>h2{
+        font-size: 25px;
+    }    
+
+    body>header{
+        text-align: left;
+    }
+
+    body>header>img{
+        width: 30%;
+    }
+    #sep0{
+        display: block;
+    }
+    #slide{
+        text-align: center;
+        background-image: url(images/background2.jpg);
+        background-position: cover;
+    }
+    #slide>img{
+        width: 60%;
+    }
+    .tamanho{
+        width: 32%;
+    }
+    
+    .grande{
+        width: 100%;
+    }
+    aside>img{
+        float: left;
+        margin-left: 35%;          
+        width: 100%;
+    }
 }
