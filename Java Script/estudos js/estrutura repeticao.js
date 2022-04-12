@@ -51,3 +51,18 @@ for(i in pessoas){
 for(pessoa of pessoas){
     console.log('nomew:',pessoa);
 } 
+
+//foreach
+
+let mapa = new Map([
+    [1,'Cris'],
+    [2,'Gui'],
+    [3,'Lara'],
+    [4,'Rafa']
+]);
+
+chaveValor = (val,key) => {
+    console.log(`A chave é: ${key} e seu valor é: ${val}`);
+}
+
+mapa.forEach(chaveValor);
