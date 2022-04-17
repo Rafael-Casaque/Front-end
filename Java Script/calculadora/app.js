@@ -1,18 +1,54 @@
 class botao{
-    constructor(value,attr,fun){                
+    constructor(value,attr){                
         let bot = document.createElement("button");                
         bot.setAttribute("class",attr);
-        bot.addEventListener("click",fun);
         bot.textContent = value;
         document.querySelector("article").appendChild(bot);
-    }    
+        bot.addEventListener("click",()=>{            
+            switch(value){
+                case "AC":
+                    document.querySelector("input").value = "";
+                    break;
+
+                case "C":
+                    document.querySelector("input").value = document.querySelector("input").value.slice(0,-1);
+                    break;
+
+                case "=":
+                    document.querySelector("input").value = eval(document.querySelector("input").value);
+                    break;
+                default:
+                    if(document.querySelector("input").value.slice(-1)=="+" && value=="+"){                
+                        document.querySelector("input").value =  document.querySelector("input").value;
+                    }
+                    
+                    else if(document.querySelector("input").value.slice(-1)=="-" && value=="-"){                
+                        document.querySelector("input").value =  document.querySelector("input").value;
+                    }
+                    
+                    else if(document.querySelector("input").value.slice(-1)=="*" && value=="*"){                
+                        document.querySelector("input").value =  document.querySelector("input").value;
+                    }
+                    
+                    else if(document.querySelector("input").value.slice(-1)=="/" && value=="/"){                
+                        document.querySelector("input").value =  document.querySelector("input").value;
+                    }                                        
+                    
+                    else{
+                        document.querySelector("input").value = document.querySelector("input").value + value;
+                    }                    
+                    break; 
+            }
+        });
+    }
 }
 
-let botaoOcupar = new botao("AC","ocupar");
+
+let botaoOcupar = new botao(".","ocupar");
 
 let botaoAC = new botao("AC","danger");
 
-let botaoC = new botao("AC","attention");
+let botaoC = new botao("C","attention");
 
 let botaoDivi = new botao("/","calc");
 
@@ -22,7 +58,7 @@ let botao8 = new botao("8","normal");
 
 let botao9 = new botao("9","normal");
 
-let botaoSoma = new botao("/","calc");
+let botaoSoma = new botao("+","calc");
 
 let botao4 = new botao("4","normal");
 
@@ -40,7 +76,7 @@ let botao3 = new botao("3","normal");
 
 let botaoMult = new botao("*","calc");
 
-botaoOcupar = new botao("AC","ocupar");
+botaoOcupar = new botao(".","ocupar");
 
 let botao0 = new botao("0","normal");
 
