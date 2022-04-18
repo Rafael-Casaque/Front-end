@@ -14,8 +14,21 @@ class botao{
                     document.querySelector("input").value = document.querySelector("input").value.slice(0,-1);
                     break;
 
-                case "=":
-                    document.querySelector("input").value = eval(document.querySelector("input").value);
+                case "=":                    
+                    try{
+                        if(eval(document.querySelector("input").value)=="Infinity" || eval(document.querySelector("input").value)=="-Infinity"){                            
+                            new error();
+                        }
+                        else if(document.querySelector("input").value=="0/0"){                            
+                            new error();
+                        }
+                        else{
+                            document.querySelector("input").value = eval(document.querySelector("input").value);
+                        }                        
+                    }                    
+                    catch(e){
+                        document.querySelector("input").value = ""
+                    }
                     break;
                 default:
                     if(document.querySelector("input").value.slice(-1)=="+" && value=="+"){                
