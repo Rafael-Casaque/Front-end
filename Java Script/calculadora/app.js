@@ -19,7 +19,7 @@ class botao{
                         if(eval(document.querySelector("input").value)=="Infinity" || eval(document.querySelector("input").value)=="-Infinity"){                            
                             new error();
                         }
-                        else if(document.querySelector("input").value=="0/0"){                            
+                        else if(String(eval(document.querySelector("input").value))=='NaN'){                            
                             new error();
                         }
                         else{
@@ -55,7 +55,6 @@ class botao{
         });
     }
 }
-
 
 let botaoOcupar = new botao(".","ocupar");
 
