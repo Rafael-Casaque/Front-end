@@ -1,0 +1,110 @@
+*{
+    font-family: sans-serif;    
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.recuperacao{
+    color: #008000;
+}
+
+.aprovado{
+    color: #0000FF;
+}
+
+.reprovado{
+    color: #FF0000;
+}
+
+section>tr>td{
+    border-top: 1px solid black;
+}
+
+article{
+    text-align: center;
+}
+
+article>input{
+    font-size:20px;
+    padding: 5px;    
+    width: 450px;
+    border-color: #CCCC;
+    border-radius: 5px;
+}
+
+article>button{
+    margin-top:10px;
+    font-size: 16px;    
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;
+    display: none;
+}
+
+.green{
+    background-color: #00d1b2;
+}
+
+.yellow{
+    background-color: #ffe08a;
+}
+
+.red{
+    background-color: #f14668;
+}
+
+article>button:nth-child(3){
+    margin-top:10px;
+    font-size: 16px;
+    background-color: #485fc7;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;    
+    display: inline-block;
+}
+
+aside{
+    background-color: #BD362F;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;    
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(119, 119, 119, 0.95); 
+    box-shadow: 0px 0px 25px 0px rgba(119, 119, 119, 0.95);
+    margin: 5px 5px 0 0;
+    display: none;
+}
+
+.erro{
+    display: flex;
+}
+
+aside>h2{    
+    color: white;
+}
+
+table{
+    width: 100%;
+    text-align: center;        
+    display: none;    
+}
+
+article>table>tbody>tr>td{
+    border: 1px solid black;
+    width: 16.66%;
+}
+
+.visivel{
+    display: table;    
+}
+
+.visivel2{
+    display: inline-block; 
+}
