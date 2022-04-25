@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 #body-claro{
@@ -41,8 +42,7 @@ header>nav>ul{
 header>nav>ul>a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-family: sans-serif;        
+    font-size: 16px;     
 }
 
 header>nav>ul>a>li{
@@ -78,8 +78,7 @@ header>nav>ul>a>li{
 
 #h2-claro{
     text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
+    font-size: 25px;    
     margin: 0 2.5% 10px 2.5%;
     color: rgb(0, 0, 0);    
     border-bottom: 1px solid black;
@@ -87,8 +86,7 @@ header>nav>ul>a>li{
 
 #h2-escuro{
     text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
+    font-size: 25px;    
     margin: 0 2.5% 10px 2.5%;
     color: rgb(255, 255, 255);    
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -97,8 +95,7 @@ header>nav>ul>a>li{
 #p-claro{
     text-indent: 40px;
     font-size: 15px;
-    text-align: justify;    
-    font-family: sans-serif;
+    text-align: justify;        
     margin: 0 5% 0 5%;
     color: rgb(0, 0, 0);        
 }
@@ -107,7 +104,6 @@ header>nav>ul>a>li{
     text-indent: 40px;
     font-size: 15px;
     text-align: justify;    
-    font-family: sans-serif;
     margin: 0 5% 0 5%;
     color: rgb(255, 255, 255);        
 }
@@ -122,7 +118,6 @@ header>nav>ul>a>li{
 
 #a-claro{
     text-decoration: none;    
-    font-family: sans-serif;
     color: black;        
 }
 
@@ -132,7 +127,6 @@ header>nav>ul>a>li{
 
 #a-escuro{
     text-decoration: none;    
-    font-family: sans-serif;
     color: rgb(255, 255, 255);        
 }
 
@@ -143,7 +137,6 @@ header>nav>ul>a>li{
 
 #album-claro{
     text-align: center;
-    font-family: sans-serif;
     font-size: 20px;    
     padding: 6px 0 2px 0 ;
     background-image: url("images/sep2.jpg");
@@ -155,7 +148,6 @@ header>nav>ul>a>li{
 
 #album-escuro{
     text-align: center;
-    font-family: sans-serif;
     font-size: 20px;    
     padding: 6px 0 2px 0 ;
     background-image: url("images/sep2.jpg");
@@ -199,7 +191,6 @@ aside>img{
 #footer-claro{
     color: white;
     background-color: black;
-    font-family: sans-serif;
     text-align: center;    
     padding: 5px 0 5px 0;
 }
@@ -207,9 +198,55 @@ aside>img{
 #footer-escuro{
     color: black;
     background-color: rgb(255, 255, 255);
-    font-family: sans-serif;
     text-align: center;    
     padding: 5px 0 5px 0;
+}
+
+#t-a{
+    text-align: center;
+    background-image: url(images/background-hosp.jpg);    
+    background-position: center;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+#t-a>h2{
+    background-color: rgba(255, 255, 255, 0.5);    
+    font-size: 23px;
+    color: black;
+}
+
+#t-a>section{
+    display: inline-block;
+    border: 1px solid black;
+    width: 95%;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#t-a>section>h3{        
+    background-color: black;
+    color: white;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#t-a>section>a{
+    text-decoration: none;
+    background-color: rgb(255, 174, 0);
+    padding: 0 10px 0 10px;    
+    color: rgb(3, 66, 31);
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;    
+}        
+
+#t-a>section>div{
+    margin: 15px 15px 0 15px;    
+    text-align: left;      
 }
 
 @media screen and (min-width: 550px) and (max-width:650px){
@@ -227,8 +264,7 @@ aside>img{
         display: inline-block;
         text-decoration: none;
         color: white;
-        font-size: 20px;
-        font-family: sans-serif;                        
+        font-size: 20px;               
         width: 24%;        
     }
 
@@ -272,8 +308,7 @@ aside>img{
         display: inline-block;
         text-decoration: none;
         color: white;
-        font-size: 20px;
-        font-family: sans-serif;                        
+        font-size: 20px;              
         width: 24%;        
     }
 
@@ -338,8 +373,7 @@ aside>img{
         display: inline-block;
         text-decoration: none;
         color: white;
-        font-size: 23px;
-        font-family: sans-serif;                        
+        font-size: 23px;                   
         width: 24%;        
     }
 
@@ -433,8 +467,7 @@ aside>img{
         display: inline-block;
         text-decoration: none;
         color: white;
-        font-size: 23px;
-        font-family: sans-serif;                        
+        font-size: 23px;                   
         width: 24%;        
     }
 
@@ -534,8 +567,7 @@ aside>img{
         display: inline-block;
         text-decoration: none;
         color: white;
-        font-size: 23px;
-        font-family: sans-serif;                        
+        font-size: 23px;                 
         width: 24%;        
     }
 
