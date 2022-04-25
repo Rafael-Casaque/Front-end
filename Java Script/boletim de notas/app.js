@@ -57,7 +57,7 @@ document.querySelector("article>button").addEventListener("click",()=>{
         document.querySelector("table>tbody").innerHTML = ''
         document.querySelector("table").classList.add("visivel")
         while(i<parseInt(document.querySelector("article>input").value)+1){
-        new aluno(`aluno${i++}`,gerarNumeroAleatorio(),gerarNumeroAleatorio(),gerarNumeroAleatorio());            
+        new aluno(`aluno ${i++}`,gerarNumeroAleatorio(),gerarNumeroAleatorio(),gerarNumeroAleatorio());            
         }                
     }
 })
@@ -78,5 +78,26 @@ document.querySelector(".yellow").addEventListener("click",()=>{
 })
 
 document.querySelector(".red").addEventListener("click",()=>{
-    
+    if(document.querySelectorAll("tbody>tr").length<=1){
+        document.querySelector("table").classList.remove("visivel");
+        document.querySelector(".green").classList.remove("visivel2");
+        document.querySelector(".yellow").classList.remove("visivel2");
+        document.querySelector(".red").classList.remove("visivel2");
+    }
+    else{        
+        let array=[];
+        for(let i of document.querySelectorAll("table>tbody>tr>td:nth-child(5)")){
+            array.push(parseFloat(i.textContent).toFixed(2));    
+        }                            
+        let piorMedia = Math.min(...array).toFixed(2);        
+        for(let i of document.querySelectorAll("table>tbody>tr>td:nth-child(5)")){
+            if(i.textContent==String(piorMedia)){
+                i.parentElement.setAttribute("class","pior");
+                for(let i of document.querySelectorAll(".pior~tr")){                                        
+                    i.firstChild.textContent = `aluno ${i.firstChild.textContent.split(" ")[1]-1}`;                    
+                }
+                document.querySelector("tbody").removeChild(document.querySelector(".pior"));                                            
+            }                
+            }  
+    }            
 })
